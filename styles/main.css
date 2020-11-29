@@ -1,0 +1,269 @@
+body{
+  margin: 0;
+  padding: 10px;
+  background-color: brown;
+  text-align: center;
+}
+h1{
+  text-transform: uppercase;
+  
+  
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+a:hover{
+  color: goldenrod;
+}
+.teams{
+  width: 80%;
+  margin: auto;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.team{
+  height: 300px;
+  flex: 1 1 19%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 20px;
+
+  background-color: #fff;
+}
+.team button{
+  height: 50px;
+  width: 100%;
+  border: none;
+  padding: 0;
+  margin: 0;
+  background-color: silver;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: navy;
+}
+.team button:hover{
+  background-color: goldenrod;
+  border: none;
+  cursor: pointer;
+
+}
+.team .name{
+  height: 50px;
+  background-color: cadetblue;
+  line-height: 50px;
+  color: #fff;
+}
+
+
+.photoTeam img{
+  width: 100px;
+  height: 100px;
+}
+
+.squad{
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+}
+
+.playerDiv{
+  flex: 1 1 20%;
+  text-align: center;
+  height: 150px;
+  margin-bottom: 20px;
+  color: #fff;
+  margin: 10px;
+  border: 2px solid gray;
+  display: flex;
+  flex-direction: column;
+}
+.mainInfo{
+  display: flex;
+  width: 90%;
+  margin: auto;
+  color: #fff;
+  justify-content: space-evenly;
+}
+.mainInfo .nameTeam{
+  text-transform: uppercase;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.mainInfo .photoTeam img{
+  width: 200px;
+  height: 200px;
+}
+
+.rightColumn{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.playerPhoto{
+  background-image: url("../img/anonim.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100px;
+  height: 100px;
+}
+
+.firstRow, .secondColumn, .secondRow{
+  display: flex;
+}
+
+.secondColumn{
+  justify-content: space-evenly;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+
+.secondRow{
+  height: 100%;
+  text-align: center;
+  justify-content: center;
+}
+
+.secondRow .playerName{
+  width: inherit;
+  display: flex;
+  flex-direction: column-reverse;
+  font-size: 20px;
+}
+.header{
+  display: flex;
+  height: 80px;
+  
+}
+.header h1{
+  margin-block-start: 0;
+    margin-block-end: 0;
+}
+.mainLink{
+  flex: 0 0 100%;
+  line-height: 80px;
+  display: flex;
+  justify-content: center;
+}
+.back {
+  display: none;
+  
+  
+  font-size: 30px;
+  height: 40px;
+  flex: 0 0 10%;
+  border: 2px solid gray;
+  border-radius: 10px;
+  line-height: 40px;
+  color: #fff;
+  margin: auto 30px auto 0;
+  justify-content: center;
+}
+.back:hover, .upcomingMatches:hover{
+  cursor: pointer;
+  background-color: blueviolet;
+}
+.match{
+  display: flex;
+  margin: 10px;
+  border: 2px solid gray;
+  height: 70px;
+  line-height: 70px;
+  font-size: 30px;
+  color: #fff;
+  padding: 4px;
+}
+.homeTeam{
+  display: flex;
+  flex: 0 0 35%;
+}
+.awayTeam{
+  display: flex;
+  flex: 0 0 35%;
+  justify-content: flex-end;
+}
+.date{
+  display: flex;
+  flex: 0 0 30%;
+}
+
+.upcomingMatches { border: none; outline: none; }
+.upcomingMatches{
+  
+  font-size: 20px;
+  height: 40px;
+  flex: 0 0 10%;
+  border: 2px solid gray;
+  border-radius: 10px;
+  line-height: 40px;
+  background-color: brown;
+  color: #fff;
+  margin: auto;
+}
+.upcomingMatches:active, .back:active{
+  background-color: goldenrod;
+}
+.refresh{
+  text-transform: uppercase;
+  color: #fff;
+  display: flex;
+  margin-left: 30px;
+}
+.refresh:hover{
+  cursor: pointer;
+}
+
+@media screen and (max-width:1180px){
+
+  .match{
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width:768px){
+
+  .match{
+    
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+  }
+  .homeTeam, .awayTeam, .date{
+    justify-content: center;
+  }
+}
+
+
+@media screen and (max-width:600px){
+
+  .mainInfo{
+    flex-direction: column;
+  }
+  .rightColumn{
+    height: 100px;
+  }
+  .back{
+    font-size: 20px;
+  }
+  h1 a{
+    font-size: 25px;
+  }
+  
+}
+
+@media screen and (max-width:375px){
+
+  h1 a{
+    font-size: 20px;
+  }
+}
+
+
